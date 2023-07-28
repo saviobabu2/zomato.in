@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup box</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+
+  <style>
+  
+    .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    background-color: #0a0a0a;
+    opacity: 50%;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    margin-top: 12%;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 540px;
+
+  
+  }
+
+  .login-container h1{
+
+font-size: 30px;
+margin-bottom: 10px;
+display: inline-block;
+  }
+  .close-button {
+      font-size: 20px;
+      cursor: pointer;
+      margin-left: 60%;
+     border: none;
+     background-color: white;
+     color: #0a0a0a;
+    }
+
+
+  .login-container input{
+width: 100%;
+height: 50px;
+margin-top: 40px;
+  }
+
+  
+
+  .custom-checkbox input[type="checkbox"] {
+  
+  width: 20px;
+  height: 20px;
+
+
+  }
+  .createAccountBtn{
+    width: 350px;
+    margin-top: 20px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: -10px;
+    background-color: red;
+  }
+  .successs button{
+    background-color: red;
+  }
+  .or{
+display: inline block;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 50%
+
+  }
+  .Google{
+    color: gray;
+    background-color: white;
+    width: 380px;
+    height: 45px;
+    border-width: .5px;
+    border-color: gray;
+    border-radius: 10px;
+
+  }
+ 
+  
+  </style>
+  
+
+
+
+</head>
+
+
+
+<body>
+
+
+      <div class='login-container'>
+        <h1>Sign up</h1>
+       <a href="index.html"> <button id="closeLogin" class="close-button" onclick="closeLogin()">&times;</button> </a>
+              <form id="login-form">
+                <input class="border " type="text" placeholder="Full Name" id="fullName" required>
+                <input  class="border " type="email" placeholder="Email" id="email" required>
+              </form>
+              <div class="form-check custom-checkbox" style="  margin-top: 25px;" >
+
+                <input  style="margin-top: 0px; margin-right: 10px;" class="form-check-input custom checkbox" type="checkbox" id="Checkbox">
+
+              <div style="font-size: medium;" > I agree to Zomato's <a style="color: red; font-size: medium;" href="https://www.zomato.com/policies/terms-of-service/">Terms of Service</a>,
+                <a  style="color: red; font-size: medium;" href="https://www.zomato.com/policies/privacy/">Privacy Policy</a>, and <a style="color: red; font-size: medium;" href="https://www.zomato.com/policies/">Content Policies</a>.
+              </div>
+              <button class="createAccountBtn" type="button" id="createAccountBtn">Create Account</button>
+              </div>
+              <div class="or"> OR</div> 
+             
+                <a href="https://myaccount.google.com/?pli=1">  <button  class="Google">
+                  <svg width="24" height="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.87566 13.2946L4.10987 16.1534L1.31093 16.2126C0.474461 14.6611 0 12.886 0 10.9997C0 9.17565 0.443609 7.45552 1.22994 5.94092H1.23054L3.72238 6.39776L4.81396 8.87465C4.5855 9.54071 4.46097 10.2557 4.46097 10.9997C4.46106 11.8072 4.60732 12.5808 4.87566 13.2946Z" fill="#FBBB00"></path><path d="M21.8082 8.94507C21.9345 9.61048 22.0004 10.2977 22.0004 11C22.0004 11.7875 21.9176 12.5557 21.7598 13.2967C21.2243 15.8183 19.8252 18.0201 17.8869 19.5782L17.8863 19.5776L14.7477 19.4175L14.3035 16.6445C15.5896 15.8902 16.5947 14.7098 17.1242 13.2967H11.2422V8.94507H17.21H21.8082Z" fill="#518EF8"></path><path d="M17.8865 19.5778L17.8871 19.5784C16.002 21.0937 13.6073 22.0002 11.0006 22.0002C6.81152 22.0002 3.16945 19.6588 1.31152 16.2132L4.87625 13.2952C5.8052 15.7744 8.19679 17.5392 11.0006 17.5392C12.2057 17.5392 13.3348 17.2134 14.3036 16.6447L17.8865 19.5778Z" fill="#28B446"></path><path d="M18.0208 2.53241L14.4573 5.44981C13.4546 4.82307 12.2694 4.46102 10.9996 4.46102C8.13229 4.46102 5.69596 6.30682 4.81356 8.87494L1.23009 5.9412H1.22949C3.06022 2.41154 6.74823 0 10.9996 0C13.6686 0 16.1158 0.950726 18.0208 2.53241Z" fill="#F14336"></path></svg>  Continue With Google</button></a>
+
+                 <div style="margin-top: 20px; font-size: 19px;">Already have an account? <span > <a href="login.html" style="color: red;">
+                  Log in
+                 </a> </span></div> 
+       </div>
+
+
+       <script>
+        
+        document.getElementById('closeLogin').innerHTML=='';
+
+
+
+        document.getElementById("createAccountBtn").addEventListener("click", function () {
+         
+         
+          var fullName = document.getElementById("fullName").value.trim();
+          var email = document.getElementById("email").value.trim();
+          var agreeCheckbox = document.getElementById("Checkbox").checked;
+    
+         
+          if (fullName === "" || email === "" || !agreeCheckbox) {
+            alert("Please fill in all the required fields and agree to the terms.");
+            
+            return;
+          }
+    
+       
+          alert("Account created successfully!");
+
+          document.getElementById("createAccountBtn").classList.add("success-button");
+          
+        });
+      </script>
+        
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <title>Login Box</title>
+
+<style>
+  
+  .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0a0a0a;
+  opacity: 50%;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin-top: 20%;
+  margin-left: 35%;
+  
+}
+
+h {
+left: 5%;
+
+  color: #333;
+font-size: 30px;
+font-family: sans-serif;
+display: inline-block;
+}
+
+.close-button {
+      font-size: 20px;
+      cursor: pointer;
+      width: 20px;
+     border: none;
+     background-color: white;
+     color: #0a0a0a;
+     margin-left: 60%;
+     height: 20px;
+    
+    }
+
+.close-button:hover{
+background-color: white;
+
+}
+
+
+input {
+  margin-top: 25px;
+  display: block;
+
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.otp-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fd0b0b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.otp-button:hover {
+  background-color: #e00f0f;
+}
+
+.login-box{
+  align-items: center;
+ 
+
+}
+.login-box img{
+
+  display: inline-block;
+}
+.country-code{
+  height: 46px;
+  border-color: #ccc;
+  border-radius: 5px;
+  border-right: 0;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+.email-button{
+  background-color: white;
+  color:grey;
+  border-color: #ccc;
+align-items: center;
+width: 100%;
+vertical-align: middle;
+height: 40px;
+margin-top: 10px;
+border-radius: 5px;
+border-width: 1px;
+cursor: pointer;
+
+}
+
+</style>
+
+</head>
+<body>
+  <div class="login-container">
+   <div> <h>Login</h>
+    <a href="index.html"> <button id="closeLogin" class="close-button" onclick="toggleDropdown()">&times;</button> </a>
+  </div>
+    
+    <form id="login-form">
+      
+     <div class="login-box" >  <select class="country-code">
+      <option value=" +91(india)" >  +91</option>
+      <option value="+93 (afghanistan)"> +93</option>
+
+      <option value=" +355(Albania)" >  +355</option>
+      <option value="+213 (Algeria)"> +213</option>
+
+      <option value=" +1684(American Samoa)" >  +1684</option>
+      <option value="+376 (Andorra)"> +376</option>
+
+      <option value=" +244(Angola)" >  +244</option>
+      <option value="+672 (Antartica)"> +672</option>
+
+
+
+
+     </select>  <input  style="width: 290px; margin-left: -5px; border-top-left-radius: 0%;
+     border-bottom-left-radius: 0%; border-left: 0;  display: inline-block" type="number" id="phone"   placeholder=" |  Phone" required></div>
+      <button class="otp-button" type="submit" >sent one time password</button>
+      <div style="text-align: center;">or</div>
+      
+      <button class="email-button" > <i><svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdktuZ"><path d="M10 9.58c-1.62 0-10-4.76-10-4.76v-0.74c0-0.92 0.74-1.66 1.66-1.66h16.68c0.92 0 1.66 0.74 1.66 1.66l-0.020 0.84c0 0-8.28 4.66-9.98 4.66zM10 11.86c1.78 0 9.98-4.46 9.98-4.46l0.020 10c0 0.92-0.74 1.66-1.66 1.66h-16.68c-0.92 0-1.66-0.74-1.66-1.66l0.020-10c0 0 8.36 4.46 9.98 4.46z"></path></svg></i> Continue With Email</button>
+      
+      
+    </form>
+   <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Faccounts.zomato.com%3Fid%3Dauth377545&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=442739719837.apps.googleusercontent.com&ss_domain=https%3A%2F%2Faccounts.zomato.com&prompt=select_account&fetch_basic_profile=true&gsiwebsdk=2&service=lso&o2v=1&flowName=GeneralOAuthFlow"> <button class="email-button" > <svg width="24" height="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.87566 13.2946L4.10987 16.1534L1.31093 16.2126C0.474461 14.6611 0 12.886 0 10.9997C0 9.17565 0.443609 7.45552 1.22994 5.94092H1.23054L3.72238 6.39776L4.81396 8.87465C4.5855 9.54071 4.46097 10.2557 4.46097 10.9997C4.46106 11.8072 4.60732 12.5808 4.87566 13.2946Z" fill="#FBBB00"></path><path d="M21.8082 8.94507C21.9345 9.61048 22.0004 10.2977 22.0004 11C22.0004 11.7875 21.9176 12.5557 21.7598 13.2967C21.2243 15.8183 19.8252 18.0201 17.8869 19.5782L17.8863 19.5776L14.7477 19.4175L14.3035 16.6445C15.5896 15.8902 16.5947 14.7098 17.1242 13.2967H11.2422V8.94507H17.21H21.8082Z" fill="#518EF8"></path><path d="M17.8865 19.5778L17.8871 19.5784C16.002 21.0937 13.6073 22.0002 11.0006 22.0002C6.81152 22.0002 3.16945 19.6588 1.31152 16.2132L4.87625 13.2952C5.8052 15.7744 8.19679 17.5392 11.0006 17.5392C12.2057 17.5392 13.3348 17.2134 14.3036 16.6447L17.8865 19.5778Z" fill="#28B446"></path><path d="M18.0208 2.53241L14.4573 5.44981C13.4546 4.82307 12.2694 4.46102 10.9996 4.46102C8.13229 4.46102 5.69596 6.30682 4.81356 8.87494L1.23009 5.9412H1.22949C3.06022 2.41154 6.74823 0 10.9996 0C13.6686 0 16.1158 0.950726 18.0208 2.53241Z" fill="#F14336"></path></svg> Continue With Gmail</button></a>
+      
+   <p style="margin-top: 15px;" font-size="1.8rem" class="sc-1hez2tp-0 sc-AxhUy iFfMuS">New to Zomato? <a href="signup.html"><span style="color: red; 
+   cursor: pointer;">Create account</span></a> </p>
+  </div>
+
+
+  <script>
+
+document.getElementById('closeLogin').innerHTML=='';
+
+document.getElementById("createAccountBtn").addEventListener("click", function (){
+
+  var phone=document.getElementById('phone')
+
+}
+    
+  </script>
+
+</body>
+</html>
